@@ -18,6 +18,8 @@ function getData() {
   var startRow = 2;
   var startCol = 1;
   var numRows = 2;
+  // 내용이 입력된 마지막 행을 사용하고 싶다면
+  // var numRows = sheet.getLastRow() - startRow + 1;
   var numCols = 4;
   
   var dataRange = sheet.getRange(startRow, startCol, numRows, numCols)
